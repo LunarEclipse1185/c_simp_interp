@@ -1,0 +1,51 @@
+int zero() {
+}
+
+int loop_and_branch(int n) {
+    int i;
+    i = 0;
+    while (i < n) {
+        if (i % 2 == 0) {
+            cout << i*i << endl;
+        } else cout << i << endl;
+        i = i + 1;
+    }
+    return 0;
+}
+
+int fib(int n) {
+    if (n == 1 || n == 2) return 1;
+    return fib(n-1) + fib(n-2);
+}
+
+int a;
+int b;
+int c;
+int d;
+int arr[10][10][10];
+int main() {
+    cout << 1 + 2 + 3 << endl;
+    cout << -3+4%3*2-1/5*3 << endl;
+    cout << 1==3-2 << endl;
+    cout << 0||3&&2^0==2<=3+2*-1 << endl;
+    cout << 1&&(2||0) << endl;
+    cout << 3*(1==1)+(4^0)*(5<=7) << endl << endl;
+    
+    cin >> a;
+    cin >> b;
+    cin >> c;
+    d = a&&(b||c)+a;
+    cout << d*a << endl << endl;
+
+    cout << zero() << endl << endl;
+
+    loop_and_branch(10);
+    cout << endl;
+
+    cout << fib(10) << endl << endl;
+
+    arr[9][9][9] = 9;
+    arr[8][8][8] = 8;
+    cout << arr[8][8][8] + arr[9][9][9] << endl;
+    return 0;
+}
